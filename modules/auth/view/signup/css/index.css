@@ -1,0 +1,191 @@
+@charset "UTF-8";
+.classic-primary-button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  margin-right: 10px;
+  background-color: rgb(137, 137, 209);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 10px 5px 10px;
+}
+
+.classic-primary-button:hover {
+  cursor: pointer;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.classic-input {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.classic-input:focus {
+  outline: none;
+  border: 2px #d3d3d3 solid;
+}
+
+.classic-input-error {
+  padding: 10px;
+  border: 2px solid #570000;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.classic-input-text-error {
+  padding: 10px;
+  color: #570000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  padding-top: 90px;
+}
+
+.signup-main-container {
+  background-color: white;
+  width: 0 auto;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form-container {
+  margin-left: 35%;
+  margin-right: 35%;
+  background-color: #fdfdfd;
+  border-radius: 20px;
+  width: 100%;
+  height: 80%;
+  border: 1px solid #d3d3d3;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form-title {
+  width: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid #d3d3d3;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+.signup-form-subtitle {
+  margin-top: 10px;
+  width: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.signup-form-text {
+  margin-top: 10px;
+  width: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 20px;
+}
+
+.signup-image-container {
+  position: relative;
+  width: auto;
+  height: 100px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: red;
+}
+
+.signup-image-container:hover {
+  cursor: pointer;
+}
+
+.signup-image-banner {
+  width: auto;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.signup-blurred-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+  z-index: 2;
+}
+
+.signup-image-text {
+  z-index: 3;
+  position: relative;
+  color: #fdfdfd;
+  padding-left: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.text-container {
+  width: 0 auto;
+  display: flex; /* Para que se ajuste al contenido */
+  justify-content: space-between;
+}
+
+.circle {
+  position: absolute;
+  top: 65%;
+  right: 10px; /* Ajusta la distancia entre el texto y el círculo */
+  transform: translateY(-50%); /* Centra verticalmente el círculo */
+  width: 20px; /* Ancho del círculo */
+  height: 20px; /* Altura del círculo */
+  border-radius: 50%; /* Para crear la forma circular */
+  background-color: #f00; /* Color de fondo del círculo */
+  text-align: center; /* Centra el contenido dentro del círculo */
+  line-height: 20px; /* Alinea verticalmente el texto al centro */
+  color: #fdfdfd; /* Color del texto */
+  font-weight: bold; /* Opciones de estilo del texto */
+  z-index: 3;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px #fdfdfd solid;
+}
+
+.circle:hover {
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1200px) {
+  .signup-form-container {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .signup-form-container {
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0px;
+    border: none;
+    box-shadow: none;
+  }
+  .signup-main-container {
+    justify-content: center;
+    align-items: start;
+  }
+}/*# sourceMappingURL=index.css.map */

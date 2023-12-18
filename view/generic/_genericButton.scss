@@ -1,0 +1,15 @@
+.classic-primary-button{
+    font-family: $main-text-font;
+    font-weight: bold;
+    margin-right: 10px;
+    background-color: rgb(137, 137, 209);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px 5px 10px;
+
+}
+.classic-primary-button:hover{
+    cursor: pointer;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+}

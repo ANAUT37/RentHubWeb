@@ -1,0 +1,150 @@
+@import "../../../../../view/generic/_genericManager";
+
+body {
+    margin: 0;
+    padding-top: 90px;
+}
+
+.signup-main-container {
+    background-color: white;
+    width: 0 auto;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-form-container {
+    margin-left: 35%;
+    margin-right: 35%;
+    background-color: $background-color;
+    border-radius: 20px;
+    width: 100%;
+    height: 80%;
+    border: 1px solid #d3d3d3;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form-title {
+    width: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #d3d3d3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.signup-form-subtitle {
+    margin-top: 10px;
+    width: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    font-family: $main-text-font;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $border-color;
+}
+.signup-form-text{
+    margin-top: 10px;
+    width: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    font-family: $main-text-font;
+    padding-bottom: 20px;
+}
+
+.signup-image-container {
+    position: relative;
+    width: auto;
+    height: 100px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: red;
+}
+
+.signup-image-container:hover {
+    cursor: pointer;
+}
+
+.signup-image-banner {
+    width: auto;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.signup-blurred-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 2;
+}
+
+
+.signup-image-text {
+    z-index: 3;
+    position: relative;
+    color: $background-color;
+    padding-left: 10px;
+    font-family: $main-text-font;
+    font-weight: bold;
+}
+
+.text-container {
+    width: 0 auto;
+    //position: absolute;
+    display: flex; /* Para que se ajuste al contenido */
+    justify-content: space-between;
+}
+
+.circle {
+    position: absolute;
+    top: 65%;
+    right: 10px; /* Ajusta la distancia entre el texto y el círculo */
+    transform: translateY(-50%); /* Centra verticalmente el círculo */
+    width: 20px; /* Ancho del círculo */
+    height: 20px; /* Altura del círculo */
+    border-radius: 50%; /* Para crear la forma circular */
+    background-color: #f00; /* Color de fondo del círculo */
+    text-align: center; /* Centra el contenido dentro del círculo */
+    line-height: 20px; /* Alinea verticalmente el texto al centro */
+    color: $background-color; /* Color del texto */
+    font-weight: bold; /* Opciones de estilo del texto */
+    z-index: 3;
+    font-family: $main-text-font;
+    font-size: 12px;
+    background-color: $transparent-color;
+    border: 2px $background-color solid;
+}
+.circle:hover{
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+  
+
+
+@media (max-width:1200px) {
+    .signup-form-container {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+@media (max-width:768px) {
+    .signup-form-container {
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 0px;
+        border: none;
+        box-shadow: none;
+    }
+    .signup-main-container {
+        justify-content: center;
+        align-items: start;
+    }
+
+}

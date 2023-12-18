@@ -1,0 +1,131 @@
+.classic-primary-button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  margin-right: 10px;
+  background-color: rgb(137, 137, 209);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 10px 5px 10px;
+}
+
+.classic-primary-button:hover {
+  cursor: pointer;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.classic-input {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.classic-input:focus {
+  outline: none;
+  border: 2px #d3d3d3 solid;
+}
+
+.classic-input-error {
+  padding: 10px;
+  border: 2px solid #570000;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.classic-input-text-error {
+  padding: 10px;
+  color: #570000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  padding-top: 90px;
+}
+
+.login-main-container {
+  background-color: white;
+  width: 0 auto;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form-container {
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: #fdfdfd;
+  border-radius: 20px;
+  width: 100%;
+  height: 80%;
+  border: 1px solid #d3d3d3;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.login-form-title {
+  width: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid #d3d3d3;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+.login-form-subtitle {
+  margin-top: 10px;
+  width: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.login-form {
+  padding: 20px;
+}
+
+.login-input {
+  padding: 10px;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.login-button {
+  padding: 10px;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .login-form-container {
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+}
+@media (max-width: 768px) {
+  .login-form-container {
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0px;
+    border: none;
+    box-shadow: none;
+  }
+  .login-main-container {
+    justify-content: center;
+    align-items: start;
+  }
+  .login-form {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}/*# sourceMappingURL=index.css.map */
